@@ -1,0 +1,41 @@
+CyanogenMod 7.2 for Motorola XT320 (Android 2.3.7 AOSP)
+
+Download RomManager (DELETED IN BUILD)
+======================================
+
+mkdir vendor/cyanogen/proprietary
+cd vendor/cyanogen && ./get-rommanager
+
+
+Build:
+======
+
+optional :
+    export PLATFORM_DIR=$(pwd)
+    export ARCH=arm
+    export CROSS_COMPILE=arm-eabi-
+    export TARGET_OUT_INTERMEDIATES=out
+    export JAVA_HOME=/usr/lib/jvm/java-6-sun
+    export PATH=$PLATFORM_DIR/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin:$JAVA_HOME/bin:$PATH
+    cd $PLATFORM_DIR
+
+    export CYANOGEN_NIGHTLY=true
+
+rm -rf out/target
+
+. build/envsetup.sh 
+
+brunch kobe
+
+or...
+
+lunch cyanogen_kobe-eng
+mka bacon
+
+Use the signed zip to update the defy with Second Init recovery, or CM7 bootmenu recovery, not the ota package
+
+Links:
+======
+FAQ : 
+
+Original Thread : 

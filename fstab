@@ -1,0 +1,4 @@
+/dev/block/mtdblock9 /cache yaffs2 rw
+/dev/block/mtdblock12 /data yaffs2 rw
+/dev/block/mtdblock11 /system yaffs2 rw
+/dev/block/mmcblk0p1 /sdcard vfat rw

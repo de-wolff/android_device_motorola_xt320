@@ -1,0 +1,3 @@
+add_lunch_combo full_xt320-userdebug
+add_lunch_combo cm_xt320-userdebug
+

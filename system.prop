@@ -1,3 +1,8 @@
 #
 # system.prop for xt320
 #
+ro.secure=0
+ro.sf.lcd_density=180
+ro.debuggable=1
+persist.sys.usb.config=adb
+
